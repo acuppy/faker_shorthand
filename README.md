@@ -1,8 +1,30 @@
 # Faker::Shorthand (for Ruby)
 
-Tied of writing `Faker::Name.name` over and over again?! Me too. But, you're in luck, there's a app (gem) for that! With `Faker::Shorthand`, you too can save your shift-key and milliseconds of exta keyboarding.
+:tired_face: Tied of writing `Faker::Name.name` over and over again?! Me too. But, you're in luck :smile:, there's a app (gem) for that! 
 
-Now, instead of `Faker::ChuckNorris.fact` simply write `f.chuck_norris.fact` and boom! you get everything you've ever wanted (...from that Faker module). The mapping is quite simple.
+With `Faker::Shorthand`, you too can save your shift-key and milliseconds of exta keyboarding...
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'faker_shorthand'
+```
+
+Then execute:
+
+    $ bundle install
+
+And last, but not least, add to your preferred test_helper (along with Faker itself):
+
+```ruby
+require 'faker_shorthand'
+```
+
+## Usage
+
+Instead of `Faker::ChuckNorris.fact` simply write `f.chuck_norris.fact` and :boom: you get everything you've ever wanted (...from that Faker module). The mapping is quite simple.
 
 We have support for single and multiword modules and methods!
 
@@ -10,7 +32,7 @@ In case you're worried, we won't lose those all so valuable keyword and method a
 
 Let our Faker methods be your Faker methods.
 
-## Never Asked Questions:
+## :question: Never Asked Questions:
 
 - "WHAT IF I HATE SHORTHAND?!" No problem. You can use your trusty shift-key to write out all of those capitalized module/class declarations.
 
@@ -24,18 +46,6 @@ class FactoryBot::SyntaxRunner
   include Faker::Shorthand::Methods
 end
 ```
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'faker_shorthand'
-```
-
-And then execute:
-
-    $ bundle install
 
 ## Coming soon (launching 2023/4/5-ish)
 
