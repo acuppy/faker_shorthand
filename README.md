@@ -1,8 +1,6 @@
 # Faker::Shorthand (for Ruby)
 
-:tired_face: Tied of writing `Faker::Name.name` over and over again?! Me too. But, you're in luck :smile:, there's a app (gem) for that! 
-
-With `Faker::Shorthand`, you too can save your shift-key and milliseconds of exta keyboarding...
+:tired_face: Tied of writing `Faker::Name.name` over and over again?! Me too. But, you're in luck :smile:, there's a app (gem) for that! With `Faker::Shorthand`, you too can save your shift-key and milliseconds of exta keyboarding...
 
 ## Installation
 
