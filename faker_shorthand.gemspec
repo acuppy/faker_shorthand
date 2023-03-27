@@ -1,7 +1,7 @@
-require_relative 'lib/faker_shorthand'
+require_relative 'lib/faker/shorthand'
 
 Gem::Specification.new do |spec|
-  spec.name          = "faker_shorthand"
+  spec.name          = "faker-shorthand"
   spec.version       = Faker::Shorthand::VERSION
   spec.authors       = ["Adam Cuppy"]
   spec.email         = ["acuppy@hey.com"]

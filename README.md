@@ -7,7 +7,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'faker_shorthand'
+gem 'faker-shorthand'
 ```
 
 Then execute:
@@ -17,7 +17,7 @@ Then execute:
 And last, but not least, add to your preferred test_helper (along with Faker itself):
 
 ```ruby
-require 'faker_shorthand'
+require 'faker/shorthand'
 ```
 
 ## Usage

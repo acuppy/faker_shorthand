@@ -1,6 +1,5 @@
-require 'faker'
-require_relative "faker_shorthand/matcher"
-require_relative "faker_shorthand/methods"
+require_relative "shorthand/matcher"
+require_relative "shorthand/methods"
 
 module Faker
   module Shorthand
@@ -12,7 +11,7 @@ module Faker
       end
     end
   
-    class MatcherMethodError < StandardError
+    class MatcherMethodError < NoMethodError
       def initialize(module_name, method_name)
         super "No generator method matches Faker::#{module_name}.#{method_name}"
       end

@@ -1,5 +1,5 @@
 require "test_helper"
-require "faker_test_ext"
+require_relative "test_ext"
 
 class Faker::ShorthandTest < Minitest::Test
   def matcher
