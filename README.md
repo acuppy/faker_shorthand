@@ -39,6 +39,9 @@ Let our Faker methods be your Faker methods.
 - "I use FactoryBot, can I integrate this glorious shorthand?" Of course - do you think we'd forget about you! No silly human. With one line of code in your `test_helper` of choice and you have shorthand everywhere!!
 
 ## FactoryBot integration
+
+Include the following line in your preferred test_helper _after_ requiring FactoryBot:
+
 ```ruby
 class FactoryBot::SyntaxRunner
   include Faker::Shorthand::Methods
