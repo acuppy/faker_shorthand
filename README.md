@@ -43,6 +43,16 @@ Let our Faker methods be your Faker methods.
 Include the following line in your preferred test_helper _after_ requiring FactoryBot:
 
 ```ruby
+
+# Do you want this...?
+FactoryBot.define do
+  factory :user do
+    name { f.name.name }
+    email { f.internet.email }
+  end
+end
+
+# Add this to your test_helper or rails_helper
 class FactoryBot::SyntaxRunner
   include Faker::Shorthand::Methods
 end
