@@ -38,21 +38,38 @@ Let our Faker methods be your Faker methods.
 
 - "I use FactoryBot, can I integrate this glorious shorthand?" Of course - do you think we'd forget about you! No silly human. With one line of code in your `test_helper` of choice and you have shorthand everywhere!!
 
+## ActiveSupport::TestCase integration
+
+Do you want something like this...?
+```ruby
+class MyFakerShorthandTest < ActiveSupport::TestCase
+  test "my faker integration" do
+    puts f.internet.email
+  end
+end
+```
+Then include Faker::Shorthand in your test_helper:
+```ruby
+class ActiveSupport::TestCase
+  include Faker::Shorthand::Methods
+end
+```
+
 ## FactoryBot integration
 
-Include the following line in your preferred test_helper _after_ requiring FactoryBot:
-
+Do you want something this...?
 ```ruby
-
-# Do you want this...?
 FactoryBot.define do
   factory :user do
     name { f.name.name }
     email { f.internet.email }
   end
 end
+```
 
-# Add this to your test_helper or rails_helper
+Add this to your test_helper or rails_helper
+
+```ruby
 class FactoryBot::SyntaxRunner
   include Faker::Shorthand::Methods
 end
