@@ -81,7 +81,7 @@ end
 Shorten the shorthand with a single line of configuration, `f.name.name` will become `f.name`, and `f.name.first_name` to become `f.name.first`.
 
 ### Compositions
-Who loves combining strings anyways?! Not us at the Institute of Faker::Shorthand. With a touch of configuration, we can make all of that go away. Ask for `f.name.first.and.last` and you've made `"#{Faker::Name.first_name} #{Faker::Name.last_name}` and thing of the past. (This may be a horrible idea. It's not entirely clear at this point.)
+Who loves combining strings anyways?! Not us at the Institute of Faker::Shorthand. With a touch of configuration, we can make all of that go away. (This may be a horrible idea. It's not entirely clear at this point.)
 
 
 ## Development
