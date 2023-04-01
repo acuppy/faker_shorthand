@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    faker_shorthand (0.1.0)
+    faker-shorthand (0.1.0)
       faker
 
 GEM
@@ -52,7 +52,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  faker_shorthand!
+  faker-shorthand!
   guard
   guard-minitest
   minitest (~> 5.0)
